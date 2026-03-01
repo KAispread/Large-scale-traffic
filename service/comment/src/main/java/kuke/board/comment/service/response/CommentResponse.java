@@ -18,7 +18,7 @@ public class CommentResponse {
         CommentResponse commentResponse = new CommentResponse();
         commentResponse.commentId = comment.getCommentId();
         commentResponse.content = comment.getContent();
-        commentResponse.parentCommentId = comment.getParentCommentId()
+        commentResponse.parentCommentId = comment.getParentCommentId();
         commentResponse.articleId = comment.getArticleId();
         commentResponse.writerId = comment.getWriterId();
         commentResponse.deleted = comment.getDeleted();
