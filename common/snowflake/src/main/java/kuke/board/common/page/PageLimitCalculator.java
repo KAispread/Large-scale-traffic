@@ -1,4 +1,4 @@
-package kuke.board.article.service;
+package kuke.board.common.page;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;
