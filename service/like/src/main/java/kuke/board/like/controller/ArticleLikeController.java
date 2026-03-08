@@ -28,7 +28,7 @@ public class ArticleLikeController {
         @PathVariable Long articleId,
         @PathVariable Long userId
     ) {
-        articleLikeService.like(articleId, userId);
+        articleLikeService.likePessimisticLock(articleId, userId);
     }
 
     @DeleteMapping("/v1/articles-likes/articles/{articleId}/users/{userId}")
@@ -36,6 +36,6 @@ public class ArticleLikeController {
         @PathVariable Long articleId,
         @PathVariable Long userId
     ) {
-        articleLikeService.unlike(articleId, userId);
+        articleLikeService.unlikePessimisticLock(articleId, userId);
     }
 }
